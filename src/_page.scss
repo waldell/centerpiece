@@ -1,0 +1,44 @@
+@import 'mixins';
+
+.page {
+    position: relative;
+    display: block;
+    width:100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    &.page--scroll-overflow {
+        overflow: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .page__content {
+
+        @include xl { width: $xl - 50px; }
+        @include lg { width: $lg - 50px; }
+        @include md { width: $md - 50px; }
+        @include sm { width: $sm - 50px; }
+        @include xs { width: 100%; }
+        
+        margin:0 auto;
+
+        &.page__content--left {
+            float:left;
+        }
+        &.page__content--right {
+            float:right;
+        }
+
+        &.page__content--full-width {
+            width: 100%;
+        }
+        &.page__content--half-width {
+            width: 50%;
+        }
+    }
+}

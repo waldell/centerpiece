@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Manjari:100,400,700&display=swap");
+.page {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  .page.page--scroll-overflow {
+    overflow: auto; }
+    .page.page--scroll-overflow::-webkit-scrollbar {
+      display: none; }
+  .page .page__content {
+    margin: 0 auto; }
+    @media (min-width: 1200px) {
+      .page .page__content {
+        width: 1150px; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .page .page__content {
+        width: 942px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .page .page__content {
+        width: 718px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .page .page__content {
+        width: 526px; } }
+    @media (max-width: 575.98px) {
+      .page .page__content {
+        width: 100%; } }
+    .page .page__content.page__content--left {
+      float: left; }
+    .page .page__content.page__content--right {
+      float: right; }
+    .page .page__content.page__content--full-width {
+      width: 100%; }
+    .page .page__content.page__content--half-width {
+      width: 50%; }
+
+.heading {
+  line-height: 1.2em;
+  font-weight: 900; }
+  .heading.heading--xs {
+    font-size: 1.8em; }
+  .heading.heading--sm {
+    font-size: 2.6em; }
+  .heading.heading--md {
+    font-size: 3.4em; }
+  .heading.heading--lg {
+    font-size: 4.2em; }
+  .heading.heading--xl {
+    font-size: 5em; }
+
+.paragraph {
+  padding-bottom: 10px; }
+  .paragraph:last-child {
+    padding-bottom: 0; }
+  .paragraph.paragraph--bold {
+    font-weight: 900; }
+  .paragraph.paragraph--italic {
+    font-style: italic; }
+  .paragraph.paragraph--red {
+    color: red; }
+
+body {
+  font-family: 'Manjari', sans-serif; }

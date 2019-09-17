@@ -1,0 +1,30 @@
+@import 'mixins';
+
+.heading  {
+    line-height: 1.2em;
+    font-weight: 900;
+
+    &.heading--xs { font-size: 1.8em; }
+    &.heading--sm { font-size: 2.6em; }
+    &.heading--md { font-size: 3.4em; }
+    &.heading--lg { font-size: 4.2em; }
+    &.heading--xl { font-size: 5em; }
+}
+
+.paragraph {
+    padding-bottom: 10px;
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    &.paragraph--bold {
+        font-weight: 900;
+    }
+    &.paragraph--italic  {
+        font-style: italic;
+    }
+    &.paragraph--red {
+        color:red;
+    }
+
+}
