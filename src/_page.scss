@@ -1,5 +1,4 @@
 @import 'mixins';
-
 .page {
     position: relative;
     display: block;
@@ -10,6 +9,11 @@
     background-position: center;
     background-attachment: fixed;
 
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 100vh;
+
     &.page--scroll-overflow {
         overflow: auto;
         &::-webkit-scrollbar {
@@ -17,28 +21,4 @@
         }
     }
 
-    .page__content {
-
-        @include xl { width: $xl - 50px; }
-        @include lg { width: $lg - 50px; }
-        @include md { width: $md - 50px; }
-        @include sm { width: $sm - 50px; }
-        @include xs { width: 100%; }
-        
-        margin:0 auto;
-
-        &.page__content--left {
-            float:left;
-        }
-        &.page__content--right {
-            float:right;
-        }
-
-        &.page__content--full-width {
-            width: 100%;
-        }
-        &.page__content--half-width {
-            width: 50%;
-        }
-    }
 }

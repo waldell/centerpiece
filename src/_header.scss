@@ -1,0 +1,24 @@
+@import 'mixins';
+
+.header  {
+    display: block;
+    width: 100%;
+    background:goldenrod;
+    z-index: 2000;
+    text-decoration: none;
+    font-size: 12pt;
+
+    &.header--fixed {
+        position: fixed;
+    }
+
+    .header__link {
+        padding:20px 14px;
+        text-decoration: none;
+        &.header__link--hover,
+        &:hover {
+            background:#000;
+            color:#fff;
+        }
+    }
+}

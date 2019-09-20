@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w src/ -o dist/"
+    "start": "node-sass -w src/ -o dist/",
+    "prestart": "start ./demo/index.html"
   },
   "repository": {
     "type": "git",
